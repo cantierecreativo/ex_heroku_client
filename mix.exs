@@ -5,15 +5,29 @@ defmodule HerokuClient.Mixfile do
     [
       app: :ex_heroku_client,
       version: "0.1.0",
+      description: "An Elixir client for the Heroku API",
       elixir: "~> 1.3",
+      package: package,
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
-      deps: deps()
+      deps: deps,
+      contributors: ["Joe Yates"]
     ]
   end
 
   def application do
     [applications: [:httpotion, :logger]]
+  end
+
+  defp package do
+    %{
+      licenses: ["MIT"],
+      links: %{
+        "GitHub" =>
+        "https://github.com/cantierecreativo/json_hyperschema_client_builder"
+      },
+      maintainers: ["Joe Yates"]
+    }
   end
 
   defp deps do

@@ -24,7 +24,7 @@ defmodule HerokuClient.Mixfile do
       licenses: ["MIT"],
       links: %{
         "GitHub" =>
-        "https://github.com/cantierecreativo/json_hyperschema_client_builder"
+        "https://github.com/cantierecreativo/ex_heroku_client"
       },
       maintainers: ["Joe Yates"]
     }

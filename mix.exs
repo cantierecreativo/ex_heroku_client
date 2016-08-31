@@ -4,7 +4,7 @@ defmodule HerokuClient.Mixfile do
   def project do
     [
       app: :ex_heroku_client,
-      version: "0.2.0",
+      version: "0.3.0",
       description: "An Elixir client for the Heroku API",
       elixir: "~> 1.3",
       package: package,
@@ -33,7 +33,7 @@ defmodule HerokuClient.Mixfile do
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:json_hyperschema_client_builder, "~> 0.7.0"}
+      {:json_hyperschema_client_builder, "~> 0.8.0"}
     ]
   end
 end

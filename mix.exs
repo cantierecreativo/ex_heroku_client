@@ -7,10 +7,10 @@ defmodule HerokuClient.Mixfile do
       version: "0.3.0",
       description: "An Elixir client for the Heroku API",
       elixir: "~> 1.3",
-      package: package,
+      package: package(),
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
-      deps: deps,
+      deps: deps(),
       contributors: ["Joe Yates"]
     ]
   end

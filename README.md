@@ -34,6 +34,8 @@ and copy your API key to `config/{env}.secret.exs`:
 ```
 use Mix.Config
 
-config :json_hyperschema_client_builder, Heroku,
-  access_token: "MY API KEY"
+secret = System.get_env("HEROKU_ACCESS_TOKEN")
+config :ex_heroku_client, :api_config,
+  headers: ["Authorization": "Bearer #{secret}",
+            "Accept": "application/vnd.heroku+json; version=3"]
 ```

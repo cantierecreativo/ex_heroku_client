@@ -33,7 +33,7 @@ defmodule HerokuClient.Mixfile do
   defp deps do
     [
       {:ex_doc, ">= 0.0.0", only: :dev},
-      {:json_hyperschema_client_builder, "~> 0.8.0"}
+      {:json_hyperschema_client_builder, "~> 0.9.0"}
     ]
   end
 end

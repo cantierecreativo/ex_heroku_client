@@ -4,7 +4,7 @@ defmodule HerokuClient.Mixfile do
   def project do
     [
       app: :ex_heroku_client,
-      version: "0.3.0",
+      version: "0.4.0",
       description: "An Elixir client for the Heroku API",
       elixir: "~> 1.3",
       package: package(),

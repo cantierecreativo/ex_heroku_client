@@ -5,5 +5,5 @@ defmodule ExHerokuClient.Builder do
   json = String.replace(
     json, ~s("id": "http://api.heroku.com/schema#"), ~s("id":"#")
   )
-  defapi "Heroku", json
+  defapi "Heroku", :ex_heroku_client, json
 end
